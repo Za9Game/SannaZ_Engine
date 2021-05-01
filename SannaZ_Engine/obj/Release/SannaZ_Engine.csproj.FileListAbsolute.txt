@@ -1,0 +1,196 @@
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\MonoGame.Framework.dll.config
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Light\Effect1.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Light\Effect2.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Audio\explosion.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Audio\song.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\128grid.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\background.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\bullet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\decorplaceholder.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\enemy.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\lightmask.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\orbsheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\pixel.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Player.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\sprite.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\spritesheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x86\SDL2.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x64\SDL2.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x86\soft_oal.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x64\soft_oal.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x86\libSDL2-2.0.so.0
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x64\libSDL2-2.0.so.0
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x86\libopenal.so.1
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x64\libopenal.so.1
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\libSDL2-2.0.0.dylib
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\libopenal.1.dylib
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\SannaZ_Engine.exe.config
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\SannaZ_Engine.exe
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\SannaZ_Engine.pdb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\MonoGame.Framework.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\SDL2-CS.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.csprojAssemblyReference.cache
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.Editor.resources
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.csproj.GenerateResource.cache
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.csproj.CoreCompileInputs.cache
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.csproj.CopyComplete
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.exe
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.pdb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\MarioNormale.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\MarioAnimation.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Blocco Random.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespuglio.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cielo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CimaTubo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Muro.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvola.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Pavimento.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Tubo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Blocco Random.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespuglio.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cielo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CimaTubo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Muro.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvola.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Pavimento.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Tubo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\128grid.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespugli2.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespugli3.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CespuglioVerdeGrande.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CespuglioVerdePiccolo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MarioNormale.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Muro2.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvole2.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvole3.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\pixel.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\PlayerSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespugli2.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespugli3.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CespuglioVerdeGrande.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CespuglioVerdePiccolo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Enemy.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MarioNormale.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Muro2.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvole2.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvole3.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandom_SpriteSheet.PNG
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandom_SpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\BloccoRandomAnimation.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\EnemyNanoSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandomUsatto.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CastelloPiccolo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\PaliSpriteSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandomUsatto.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CastelloPiccolo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\PaliSpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\PaliAnimation.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MuroSaltaSpriteSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MuroSaltaSpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\MuroSalto.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandomUsattoSpriteSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandomUsattoSpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Fonts\Emulogic.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MonetaSpriteSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MonetaSpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\MonetaAnimation.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Button.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Button.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\128grid.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Button.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Blocco Random.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandomUsatto.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandomUsattoSpriteSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandom_SpriteSheet.PNG
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CastelloPiccolo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespugli2.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespugli3.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespuglio.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CespuglioVerdeGrande.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CespuglioVerdePiccolo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cielo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CimaTubo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MarioNormale.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MonetaSpriteSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Muro.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Muro2.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MuroSaltaSpriteSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvola.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvole2.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvole3.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\PaliSpriteSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Pavimento.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Tubo.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\pixel.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\PlayerSheet.png
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Blocco Random.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandomUsatto.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandomUsattoSpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\BloccoRandom_SpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CastelloPiccolo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespugli2.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespugli3.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cespuglio.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CespuglioVerdeGrande.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CespuglioVerdePiccolo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Cielo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\CimaTubo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Enemy.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\EnemyNanoSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MarioNormale.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MonetaSpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Muro.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Muro2.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\MuroSaltaSpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvola.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvole2.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Nuvole3.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\PaliSpriteSheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Pavimento.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Palette\Tubo.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Light\Effect1.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Light\Effect2.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Fonts\Emulogic.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Audio\explosion.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Audio\song.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\128grid.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\background.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\bullet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Button.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\decorplaceholder.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\enemy.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\lightmask.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\MarioNormale.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\orbsheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\pixel.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Player.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\sprite.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\spritesheet.xnb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x86\SDL2.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x64\SDL2.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x86\soft_oal.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x64\soft_oal.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x86\libSDL2-2.0.so.0
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x64\libSDL2-2.0.so.0
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x86\libopenal.so.1
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\x64\libopenal.so.1
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\libSDL2-2.0.0.dylib
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\libopenal.1.dylib
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\MonoGame.Framework.dll.config
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\BloccoRandomAnimation.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\MarioAnimation.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\MonetaAnimation.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\MuroSalto.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content\Animations\PaliAnimation.anm
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\SannaZ_Engine.exe.config
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\SannaZ_Engine.exe
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\SannaZ_Engine.pdb
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\MonoGame.Framework.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\SDL2-CS.dll
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.csprojAssemblyReference.cache
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.Editor.resources
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.csproj.GenerateResource.cache
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.csproj.CoreCompileInputs.cache
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.csproj.CopyComplete
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.exe
+E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\obj\Release\SannaZ_Engine.pdb

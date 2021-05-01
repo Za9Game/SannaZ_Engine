@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnimationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <animation>
+    <animationList>
+      <Animation>
+        <animationOrder>
+          <int>0</int>
+        </animationOrder>
+        <name>Idle</name>
+        <speed>2</speed>
+      </Animation>
+      <Animation>
+        <animationOrder>
+          <int>1</int>
+          <int>2</int>
+          <int>3</int>
+          <int>4</int>
+          <int>5</int>
+          <int>4</int>
+          <int>3</int>
+          <int>2</int>
+          <int>1</int>
+          <int>0</int>
+        </animationOrder>
+        <name>Salto</name>
+        <speed>2</speed>
+      </Animation>
+    </animationList>
+    <width>64</width>
+    <height>84</height>
+    <gridX>6</gridX>
+    <gridY>1</gridY>
+  </animation>
+  <texturePath>Textures\BloccoRandomUsattoSpriteSheet.png</texturePath>
+</AnimationData>
