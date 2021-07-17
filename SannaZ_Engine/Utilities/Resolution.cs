@@ -18,8 +18,10 @@ using Microsoft.Xna.Framework.Graphics;
 
 namespace SannaZ_Engine
 {
+#if !DEBUG
     public static class Resolution
     {
+        
         static private GraphicsDeviceManager _Device = null;
 
         static private int _Width = 800;
@@ -194,4 +196,5 @@ namespace SannaZ_Engine
             _Device.GraphicsDevice.Viewport = viewport;
         }
     }
+#endif
 }

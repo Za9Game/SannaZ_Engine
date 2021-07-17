@@ -169,7 +169,12 @@ namespace SannaZ_Engine
 				moneta.position = new Vector2(this.position.X + this.center.X/6, this.position.Y);
 				moneta.applyGravity = true;
 				moneta.collidable = false;
+#if DEBUG
+				moneta.Load(Global.game.Editor.Content);
+#endif
+#if !DEBUG
 				moneta.Load(Global.game.Content);
+#endif
 				Global.game.objects.Add(moneta);
 			}
 			Load(provisoryContent);

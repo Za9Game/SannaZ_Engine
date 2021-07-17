@@ -112,8 +112,8 @@ namespace SannaZ_Engine
 
         public static Vector2 ScreenToWorld(Vector2 input)
         {
-            input.X -= Resolution.VirtualViewportX;
-            input.Y -= Resolution.VirtualViewportY;
+        //    input.X -= Resolution.VirtualViewportX;
+       //     input.Y -= Resolution.VirtualViewportY;
 
             return Vector2.Transform(input, Matrix.Invert(Camera.GetTransformMatrix()));
         }

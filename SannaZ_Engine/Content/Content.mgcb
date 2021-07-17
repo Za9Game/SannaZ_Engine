@@ -3,7 +3,7 @@
 
 /outputDir:..\bin\DesktopGL\AnyCPU\Debug\Content
 /intermediateDir:..\bin\DesktopGL\AnyCPU\Debug\Content
-/platform:DesktopGL
+/platform:Windows
 /config:
 /profile:Reach
 /compress:False
