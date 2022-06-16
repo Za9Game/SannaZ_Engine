@@ -38,13 +38,6 @@ namespace SannaZ_Engine
             }
         }
 
-        public void Draw(SpriteBatch spriteBatch, ContentManager content)
-        {
-            for (int i = 0; i < baseHUD.Count; i++)
-            {
-                baseHUD[i].Draw(spriteBatch, content);
-            }
-        }
         public void Draw(SpriteBatch spriteBatch, ContentManager content, GameTime gameTime)
         {
             for (int i = 0; i < baseHUD.Count; i++)

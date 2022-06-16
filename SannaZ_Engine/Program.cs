@@ -19,15 +19,16 @@ namespace SannaZ_Engine
 #endif
         static void Main()
         {
-#if DEBUG
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Editor());
+
+            Game1 game = new Game1();
+
+#if DEBUG
+            Editor editor = new Editor(game);
+            game = new Game1(editor);
 #endif
-#if !DEBUG
-            using (Game1 game = new Game1())
-                game.Run();
-#endif
+            game.Run();
 
         }
     }

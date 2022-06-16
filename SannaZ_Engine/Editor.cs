@@ -20,7 +20,6 @@ using System.Windows.Forms.DataVisualization.Charting;
 
 namespace SannaZ_Engine
 {
-#if DEBUG
     public partial class Editor : Form
     {
         public Game1 game;
@@ -64,30 +63,35 @@ namespace SannaZ_Engine
         int lastIndexList = -1;
 
 
-        public Editor()
+        public Editor(Game1 inputGame)
         {
             Thread newThread = new Thread(InitializeComponent);
             newThread.Start();
             newThread.Join();
 
+            game = inputGame;
+
+            game.IsMouseVisible = true;
 
             // con questo possiamo fare quello che ci pare con la finestra di gioco
+            SDL.SDL_SysWMinfo info = new SDL.SDL_SysWMinfo();
+            SDL.SDL_GetWindowWMInfo(game.Window.Handle, ref info);
+            gameWinHandle = info.info.win.window;
             
             //posizione dell'editor
+            RECT gameWindow = new RECT();
+            GetWindowRect(gameWinHandle, ref gameWindow);
+            Location = new System.Drawing.Point(gameWindow.Right-15, gameWindow.Top);
 
             //aggiungere i tipi alle liste
             PopulateObjectList();
             PopulateHudList();
             PopulatePropertyList();
 
-            game = this.game11;
-            this.game11.editor = this;
-
             //setta i valori di width e height della mappa
             mapHeight.Value = game.map.mapHeight;
             mapWidth.Value = game.map.mapWidth;
         }
-
 
         private void addButton_Click(object sender, EventArgs e)
         {
@@ -112,7 +116,7 @@ namespace SannaZ_Engine
                     newObject = (GameObject)Activator.CreateInstance(type);
                     newObject.spriteName = objectsOnList[listBox.SelectedIndex].spriteName;
                     newObject.scale = objectsOnList[listBox.SelectedIndex].scale;
-                    newObject.LoadSprite(game.Editor.Content);
+                    newObject.LoadSprite(game.Content);
                     newObject.layerDepth = objectsOnList[listBox.SelectedIndex].layerDepth;
                 }
                 else
@@ -136,11 +140,11 @@ namespace SannaZ_Engine
                     {
                         try
                         {
-                            string fileDirectory = game.Editor.Content.RootDirectory;
+                            string fileDirectory = game.Content.RootDirectory;
                             newObject.spriteName = openFileDialog1.SafeFileName;
                             fileDirectory = openFileDialog1.FileName.Remove(openFileDialog1.FileName.Length - openFileDialog1.SafeFileName.Length, openFileDialog1.SafeFileName.Length);
-                            game.Editor.Content.RootDirectory = fileDirectory.Remove(0, contentFullPath.Length);
-                            newObject.LoadSprite(game.Editor.Content);
+                            game.Content.RootDirectory = fileDirectory.Remove(0, contentFullPath.Length);
+                            newObject.LoadSprite(game.Content);
                         }
                         catch (Exception exception)
                         {
@@ -149,7 +153,7 @@ namespace SannaZ_Engine
                     }
                 }
 
-                newObject.Load(game.Editor.Content);
+                newObject.Load(game.Content);
                 newObject.typeObject = (GameObject.TypeObject)selectedObject;
                 game.objects.Add(newObject);
 
@@ -162,7 +166,7 @@ namespace SannaZ_Engine
             {
                 Light newObject = new Light(new Vector2(0, 0));
 
-                newObject.Load(game.Editor.Content);
+                newObject.Load(game.Content);
                 game.lights.Add(newObject);
 
                 placingItem = true;
@@ -179,7 +183,7 @@ namespace SannaZ_Engine
 
                 newObject = (BaseHUD)Activator.CreateInstance(type);
                 newObject.instanceTexture();
-                newObject.Load(game.Editor.Content);
+                newObject.Load(game.Content);
                 newObject.typeHUD = (BaseHUD.TypeHUD)selectedObject;
                 game.gameHUD.baseHUD.Add(newObject);
 
@@ -228,7 +232,7 @@ namespace SannaZ_Engine
                 Point desiredIndex = map.GetTileIndex(mousePosition);
                 if (mode == CreateMode.BoxesCollider)
                 {
-#region Add BoxesCollider
+                    #region Add BoxesCollider
                     if (desiredIndex.X >= 0 && desiredIndex.X < map.mapWidth && desiredIndex.Y >= 0 && desiredIndex.Y < map.mapHeight)
                     {
                         Rectangle newBoxCollider = new Rectangle(desiredIndex.X * map.tileSize, desiredIndex.Y * map.tileSize, map.tileSize, map.tileSize);
@@ -290,7 +294,7 @@ namespace SannaZ_Engine
                             }
                         }
                     }
-#endregion
+                    #endregion
                 }
                 else if (mode == CreateMode.Objects)
                 {
@@ -884,9 +888,9 @@ namespace SannaZ_Engine
             }
         }
 
-#region Helpers
+        #region Helpers
 
-#region DLL Functions
+        #region DLL Functions
         [DllImport("user32.dll")]
         static extern bool SetForegroundWindow(IntPtr hWnd);
 
@@ -904,7 +908,7 @@ namespace SannaZ_Engine
             public int Right;
             public int Bottom;
         }
-#endregion
+        #endregion
 
         private void DrawSelectedItem(SpriteBatch spriteBatch)
         {
@@ -978,10 +982,10 @@ namespace SannaZ_Engine
             for (int i = 0; i < game.objects.Count; i++)
             {
                 game.objects[i].Initialize();
-                game.objects[i].Load(game.Editor.Content);
+                game.objects[i].Load(game.Content);
             }
         }
-#endregion
+        #endregion
 
         public void SetListBox<T>(List<T> inputList, bool highlightFirstInList)
         {
@@ -1515,12 +1519,12 @@ namespace SannaZ_Engine
             if (mode == CreateMode.Objects)
             {
                 returnObjectOnList()[listBox.SelectedIndex].scale = (float)scale.Value;
-                returnObjectOnList()[listBox.SelectedIndex].Load(game.Editor.Content);
+                returnObjectOnList()[listBox.SelectedIndex].Load(game.Content);
             }
             if (mode == CreateMode.Light)
             {
                 game.lights[listBox.SelectedIndex].scale = (float)scale.Value;
-                game.lights[listBox.SelectedIndex].Load(game.Editor.Content);
+                game.lights[listBox.SelectedIndex].Load(game.Content);
             }
         }
         private void intensity_ValueChanged(object sender, EventArgs e)
@@ -1598,11 +1602,11 @@ namespace SannaZ_Engine
                 try
                 {
                     List<GameObject> gameObjectOnList = returnObjectOnList();
-                    string fileDirectory = game.Editor.Content.RootDirectory;
+                    string fileDirectory = game.Content.RootDirectory;
                     gameObjectOnList[listBox.SelectedIndex].spriteName = openFileDialog1.SafeFileName;
                     fileDirectory = openFileDialog1.FileName.Remove(openFileDialog1.FileName.Length-openFileDialog1.SafeFileName.Length, openFileDialog1.SafeFileName.Length);
-                    game.Editor.Content.RootDirectory = fileDirectory.Remove(0, contentFullPath.Length);
-                    gameObjectOnList[listBox.SelectedIndex].LoadSprite(game.Editor.Content);
+                    game.Content.RootDirectory = fileDirectory.Remove(0, contentFullPath.Length);
+                    gameObjectOnList[listBox.SelectedIndex].LoadSprite(game.Content);
                     UpdateSpriteText(gameObjectOnList);
                 }
                 catch (Exception exception)
@@ -1618,7 +1622,7 @@ namespace SannaZ_Engine
 
             List<GameObject> gameObjectOnList = returnObjectOnList();
             gameObjectOnList[listBox.SelectedIndex].spriteName = null;
-            gameObjectOnList[listBox.SelectedIndex].LoadSprite(game.Editor.Content);
+            gameObjectOnList[listBox.SelectedIndex].LoadSprite(game.Content);
             UpdateSpriteText(gameObjectOnList);
         }
 
@@ -1684,11 +1688,16 @@ namespace SannaZ_Engine
 
             for (int i = 0; i < game.objects.Count; i++)
             {
-                game.objects[i].Load(game.Editor.Content);
+                game.objects[i].Load(game.Content);
                 game.objects[i].Initialize();
             }
 
             ResetEditorList();
+        }
+
+        private void Editor_FormClosing(object sender, FormClosingEventArgs e)
+        {
+            game.Exit();
         }
 
         private void noneRadioButton_CheckedChanged(object sender, EventArgs e)
@@ -1845,116 +1854,6 @@ namespace SannaZ_Engine
             copyThread.Start();
         }
 
-        private void fileToolStripMenuItem_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void SannaZEngineText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void groupBox1_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void xLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void yLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void wLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void hLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void objectTypes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void layerDepthLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void propertyTypes_SelectedIndexChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void propertyText_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void animationPath_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void animationPathLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void tagLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void addTagText_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void Editor_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void layerLabel_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void gameGroupBox_Enter(object sender, EventArgs e)
-        {
-
-        }
-
-        private void drawSelected_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void drawGridCheckBox_CheckedChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void label2_Click(object sender, EventArgs e)
-        {
-
-        }
-
         public void OpenLevel()
         {
             //loading livello
@@ -2000,5 +1899,4 @@ namespace SannaZ_Engine
             }
         }
     }
-#endif
 }
