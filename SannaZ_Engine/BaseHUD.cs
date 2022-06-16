@@ -38,7 +38,9 @@ namespace SannaZ_Engine
 
         public void instanceTexture()
         {
-            texture = Global.game.Content.Load<Texture2D>("Button");
+#if DEBUG
+            texture = Global.game.Editor.Content.Load<Texture2D>("Button");
+#endif
         }
 
         public BaseHUD(Vector2 position)

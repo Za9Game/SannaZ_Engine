@@ -32,8 +32,14 @@ namespace SannaZ_Engine
         
         public override void Initialize()
         {
+#if DEBUG
+            texture = Global.game.Editor.Content.Load<Texture2D>("Button");
+            font = Global.game.Editor.Content.Load<SpriteFont>("Fonts/Emulogic");
+#endif
+#if !DEBUG
             texture = Global.game.Content.Load<Texture2D>("Button");
             font = Global.game.Content.Load<SpriteFont>("Fonts/Emulogic");
+#endif
             textColor = Color.Black;
             base.Initialize();
         }
@@ -45,8 +51,15 @@ namespace SannaZ_Engine
             else
                 textColor = new Color(255, 255, 255);
 
+
+#if DEBUG
+            if (font == null)
+                font = Global.game.Editor.Content.Load<SpriteFont>("Fonts/Emulogic");
+#endif
+#if !DEBUG
             if (font == null)
                 font = Global.game.Content.Load<SpriteFont>("Fonts/Emulogic");
+#endif
             if (font != null)
             {
                 if (text == "")
@@ -61,9 +74,15 @@ namespace SannaZ_Engine
 
         public override void Update()
         {
+#if DEBUG
             if(texture == null)
+                texture = Global.game.Editor.Content.Load<Texture2D>("Button");
+#endif
+#if !DEBUG
+            if (texture == null)
                 texture = Global.game.Content.Load<Texture2D>("Button");
-            if(buttonScale == Vector2.Zero)
+#endif
+            if (buttonScale == Vector2.Zero)
                 buttonScale = new Vector2(texture.Width, texture.Height);
 
             var mouseRectangle = new Rectangle((int)Input.MousePositionCamera().X, (int)Input.MousePositionCamera().Y, 1, 1);

@@ -39,7 +39,9 @@ namespace SannaZ_Engine
 		public string animationName;
 
 		protected Game1 game1;
+#if DEBUG
 		protected Editor editor;
+#endif
 		bool alreadyLoadedGameAndEditor = false;
 
 		public bool blocca = false;
@@ -69,8 +71,10 @@ namespace SannaZ_Engine
 			{
 				alreadyLoadedGameAndEditor = true;
 				game1 = Global.game;
+#if DEBUG
 				if (Global.game.editor != null)
 					editor = Global.game.editor;
+#endif
 			}
         }
 
@@ -107,8 +111,10 @@ namespace SannaZ_Engine
 				if (game1 == null && Global.game != null)
 				{
 					game1 = Global.game;
+#if DEBUG
 					if (editor == null && Global.game.editor != null)
 						editor = Global.game.editor;
+#endif
 					alreadyLoadedGameAndEditor = true;
 				}
 			}
