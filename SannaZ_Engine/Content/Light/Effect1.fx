@@ -10,5 +10,5 @@ float4 PixelShaderLight(float2 coords: TEXCOORD0) : COLOR0
 	return color * lightColor; 
 } 
 technique Technique1 { 
-	pass Pass1 { PixelShader = compile ps_4_0_level_9_1  PixelShaderLight(); }
+	pass Pass1 { PixelShader = compile ps_2_0 PixelShaderLight(); } 
 }

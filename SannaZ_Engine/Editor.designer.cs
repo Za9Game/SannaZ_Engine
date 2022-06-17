@@ -5,7 +5,6 @@ using System.Windows.Forms;
 
 namespace SannaZ_Engine
 {
-#if DEBUG
     partial class Editor
     {
         private System.ComponentModel.IContainer components = null;
@@ -84,7 +83,7 @@ namespace SannaZ_Engine
         private System.Windows.Forms.Label layerLabel;
         private System.Windows.Forms.NumericUpDown layerValue;
 
-#region Windows Form Designer generated code
+        #region Windows Form Designer generated code
 
         private void InitializeComponent()
         {
@@ -152,33 +151,27 @@ namespace SannaZ_Engine
             this.changeHudTextLabel = new System.Windows.Forms.Label();
             this.layerLabel = new System.Windows.Forms.Label();
             this.layerValue = new System.Windows.Forms.NumericUpDown();
-            this.game11 = new SannaZ_Engine.Game1();
             this.menuStrip.SuspendLayout();
             this.groupBox1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.xPosition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.yPosition)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.width)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.height)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.scale)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.intensity)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.layerDepth)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layerValue)).BeginInit();
             this.gameGroupBox.SuspendLayout();
             this.mapSizeGroup.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mapHeight)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapWidth)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layerValue)).BeginInit();
             this.SuspendLayout();
             // 
             // SannaZEngineText
             // 
-            this.SannaZEngineText.AutoSize = true;
             this.SannaZEngineText.BackColor = System.Drawing.Color.Transparent;
-            this.SannaZEngineText.Location = new System.Drawing.Point(1384, 7);
-            this.SannaZEngineText.Name = "SannaZEngineText";
-            this.SannaZEngineText.Size = new System.Drawing.Size(87, 13);
-            this.SannaZEngineText.TabIndex = 0;
+            this.SannaZEngineText.AutoSize = true;
+            this.SannaZEngineText.Location = new System.Drawing.Point(435, 5);
+            this.SannaZEngineText.Name = "SannaZEngine";
             this.SannaZEngineText.Text = "SannaZEngine!!!";
-            this.SannaZEngineText.Click += new System.EventHandler(this.SannaZEngineText_Click);
             // 
             // menuStrip
             // 
@@ -186,7 +179,7 @@ namespace SannaZ_Engine
             this.fileToolStripMenuItem});
             this.menuStrip.Location = new System.Drawing.Point(0, 0);
             this.menuStrip.Name = "menuStrip";
-            this.menuStrip.Size = new System.Drawing.Size(1474, 24);
+            this.menuStrip.Size = new System.Drawing.Size(550, 24);
             this.menuStrip.TabIndex = 0;
             this.menuStrip.Text = "menuStrip1";
             this.menuStrip.MouseEnter += new System.EventHandler(this.menuStrip_MouseEnter);
@@ -201,7 +194,6 @@ namespace SannaZ_Engine
             this.fileToolStripMenuItem.Name = "fileToolStripMenuItem";
             this.fileToolStripMenuItem.Size = new System.Drawing.Size(37, 20);
             this.fileToolStripMenuItem.Text = "File";
-            this.fileToolStripMenuItem.Click += new System.EventHandler(this.fileToolStripMenuItem_Click);
             // 
             // newToolStripMenuItem
             // 
@@ -239,13 +231,12 @@ namespace SannaZ_Engine
             this.groupBox1.Controls.Add(this.lightRadioButton);
             this.groupBox1.Controls.Add(this.hudRadioButton);
             this.groupBox1.Controls.Add(this.boxesColliderRadioButton);
-            this.groupBox1.Location = new System.Drawing.Point(955, 29);
+            this.groupBox1.Location = new System.Drawing.Point(6, 27);
             this.groupBox1.Name = "groupBox1";
             this.groupBox1.Size = new System.Drawing.Size(520, 118);
             this.groupBox1.TabIndex = 1;
             this.groupBox1.TabStop = false;
             this.groupBox1.Text = "Create";
-            this.groupBox1.Enter += new System.EventHandler(this.groupBox1_Enter);
             // 
             // noneRadioButton
             // 
@@ -274,7 +265,7 @@ namespace SannaZ_Engine
             this.lightRadioButton.AutoSize = true;
             this.lightRadioButton.Location = new System.Drawing.Point(6, 91);
             this.lightRadioButton.Name = "lightRadioButton";
-            this.lightRadioButton.Size = new System.Drawing.Size(53, 17);
+            this.lightRadioButton.Size = new System.Drawing.Size(61, 17);
             this.lightRadioButton.TabIndex = 3;
             this.lightRadioButton.Text = "Lights";
             this.lightRadioButton.UseVisualStyleBackColor = true;
@@ -285,7 +276,7 @@ namespace SannaZ_Engine
             this.hudRadioButton.AutoSize = true;
             this.hudRadioButton.Location = new System.Drawing.Point(200, 21);
             this.hudRadioButton.Name = "hudRadioButton";
-            this.hudRadioButton.Size = new System.Drawing.Size(45, 17);
+            this.hudRadioButton.Size = new System.Drawing.Size(61, 17);
             this.hudRadioButton.TabIndex = 3;
             this.hudRadioButton.Text = "Hud";
             this.hudRadioButton.UseVisualStyleBackColor = true;
@@ -296,7 +287,7 @@ namespace SannaZ_Engine
             this.boxesColliderRadioButton.AutoSize = true;
             this.boxesColliderRadioButton.Location = new System.Drawing.Point(6, 43);
             this.boxesColliderRadioButton.Name = "boxesColliderRadioButton";
-            this.boxesColliderRadioButton.Size = new System.Drawing.Size(88, 17);
+            this.boxesColliderRadioButton.Size = new System.Drawing.Size(51, 17);
             this.boxesColliderRadioButton.TabIndex = 2;
             this.boxesColliderRadioButton.Text = "BoxesCollider";
             this.boxesColliderRadioButton.UseVisualStyleBackColor = true;
@@ -305,7 +296,7 @@ namespace SannaZ_Engine
             // listBox
             // 
             this.listBox.FormattingEnabled = true;
-            this.listBox.Location = new System.Drawing.Point(955, 153);
+            this.listBox.Location = new System.Drawing.Point(6, 151);
             this.listBox.Name = "listBox";
             this.listBox.Size = new System.Drawing.Size(520, 147);
             this.listBox.TabIndex = 2;
@@ -313,7 +304,7 @@ namespace SannaZ_Engine
             // 
             // addButton
             // 
-            this.addButton.Location = new System.Drawing.Point(983, 306);
+            this.addButton.Location = new System.Drawing.Point(34, 304);
             this.addButton.Name = "addButton";
             this.addButton.Size = new System.Drawing.Size(75, 23);
             this.addButton.TabIndex = 5;
@@ -323,7 +314,7 @@ namespace SannaZ_Engine
             // 
             // removeButton
             // 
-            this.removeButton.Location = new System.Drawing.Point(1111, 306);
+            this.removeButton.Location = new System.Drawing.Point(162, 304);
             this.removeButton.Name = "removeButton";
             this.removeButton.Size = new System.Drawing.Size(75, 23);
             this.removeButton.TabIndex = 6;
@@ -333,7 +324,7 @@ namespace SannaZ_Engine
             // 
             // removeAllButton
             // 
-            this.removeAllButton.Location = new System.Drawing.Point(1189, 306);
+            this.removeAllButton.Location = new System.Drawing.Point(240, 304);
             this.removeAllButton.Name = "removeAllButton";
             this.removeAllButton.Size = new System.Drawing.Size(40, 23);
             this.removeAllButton.TabIndex = 6;
@@ -342,57 +333,51 @@ namespace SannaZ_Engine
             this.removeAllButton.Visible = false;
             this.removeAllButton.Click += new System.EventHandler(this.removeAllButton_Click);
             // 
+            // drawGridCheckBox
+            // 
+            this.drawGridCheckBox.AutoSize = true;
+            this.drawGridCheckBox.Location = new System.Drawing.Point(6, 73);
+            this.drawGridCheckBox.Name = "drawGridCheckBox";
+            this.drawGridCheckBox.Size = new System.Drawing.Size(73, 17);
+            this.drawGridCheckBox.TabIndex = 5;
+            this.drawGridCheckBox.Text = "Draw Grid";
+            this.drawGridCheckBox.UseVisualStyleBackColor = true;
+            // 
             // xPosition
             // 
-            this.xPosition.Location = new System.Drawing.Point(966, 335);
-            this.xPosition.Maximum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            0});
-            this.xPosition.Minimum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            -2147483648});
+            this.xPosition.Increment = new decimal(new int[] { 1, 0, 0, 0 });
+            this.xPosition.Location = new System.Drawing.Point(17, 333);
+            this.xPosition.Maximum = new decimal(new int[] { 90000, 0, 0, 0 });
+            this.xPosition.Minimum = new decimal(new int[] { 90000, 0, 0, -2147483648 });
             this.xPosition.Name = "xPosition";
             this.xPosition.Size = new System.Drawing.Size(50, 20);
             this.xPosition.TabIndex = 7;
-            this.xPosition.ValueChanged += new System.EventHandler(this.xPosition_ValueChanged);
+            this.xPosition.ValueChanged += new System.EventHandler(this.xPosition_ValueChanged);// 
             // 
             // xLabel
             // 
             this.xLabel.AutoSize = true;
-            this.xLabel.Location = new System.Drawing.Point(949, 337);
+            this.xLabel.Location = new System.Drawing.Point(0, 335);
             this.xLabel.Name = "xLabel";
             this.xLabel.Size = new System.Drawing.Size(17, 13);
             this.xLabel.TabIndex = 8;
             this.xLabel.Text = "X:";
-            this.xLabel.Click += new System.EventHandler(this.xLabel_Click);
             // 
             // yLabel
             // 
             this.yLabel.AutoSize = true;
-            this.yLabel.Location = new System.Drawing.Point(1017, 337);
+            this.yLabel.Location = new System.Drawing.Point(68, 335);
             this.yLabel.Name = "yLabel";
             this.yLabel.Size = new System.Drawing.Size(17, 13);
             this.yLabel.TabIndex = 10;
             this.yLabel.Text = "Y:";
-            this.yLabel.Click += new System.EventHandler(this.yLabel_Click);
             // 
             // yPosition
             // 
-            this.yPosition.Location = new System.Drawing.Point(1034, 335);
-            this.yPosition.Maximum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            0});
-            this.yPosition.Minimum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            -2147483648});
+            this.yPosition.Increment = new decimal(new int[] {1, 0, 0, 0});
+            this.yPosition.Location = new System.Drawing.Point(85, 333);
+            this.yPosition.Maximum = new decimal(new int[] {90000, 0, 0, 0});
+            this.yPosition.Minimum = new decimal(new int[] {90000, 0, 0, -2147483648});
             this.yPosition.Name = "yPosition";
             this.yPosition.Size = new System.Drawing.Size(50, 20);
             this.yPosition.TabIndex = 9;
@@ -401,26 +386,17 @@ namespace SannaZ_Engine
             // wLabel
             // 
             this.wLabel.AutoSize = true;
-            this.wLabel.Location = new System.Drawing.Point(1086, 337);
+            this.wLabel.Location = new System.Drawing.Point(137, 335);
             this.wLabel.Name = "wLabel";
             this.wLabel.Size = new System.Drawing.Size(21, 13);
             this.wLabel.TabIndex = 12;
             this.wLabel.Text = "W:";
-            this.wLabel.Click += new System.EventHandler(this.wLabel_Click);
             // 
             // width
             // 
-            this.width.Increment = new decimal(new int[] {
-            16,
-            0,
-            0,
-            0});
-            this.width.Location = new System.Drawing.Point(1107, 335);
-            this.width.Maximum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            0});
+            this.width.Increment = new decimal(new int[] {16, 0, 0, 0});
+            this.width.Location = new System.Drawing.Point(158, 333);
+            this.width.Maximum = new decimal(new int[] {90000, 0, 0, 0});
             this.width.Name = "width";
             this.width.Size = new System.Drawing.Size(50, 20);
             this.width.TabIndex = 11;
@@ -429,26 +405,17 @@ namespace SannaZ_Engine
             // hLabel
             // 
             this.hLabel.AutoSize = true;
-            this.hLabel.Location = new System.Drawing.Point(1158, 337);
+            this.hLabel.Location = new System.Drawing.Point(209, 335);
             this.hLabel.Name = "hLabel";
             this.hLabel.Size = new System.Drawing.Size(18, 13);
             this.hLabel.TabIndex = 14;
             this.hLabel.Text = "H:";
-            this.hLabel.Click += new System.EventHandler(this.hLabel_Click);
             // 
             // height
             // 
-            this.height.Increment = new decimal(new int[] {
-            16,
-            0,
-            0,
-            0});
-            this.height.Location = new System.Drawing.Point(1177, 335);
-            this.height.Maximum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            0});
+            this.height.Increment = new decimal(new int[] {16, 0, 0, 0});
+            this.height.Location = new System.Drawing.Point(228, 333);
+            this.height.Maximum = new decimal(new int[] {90000, 0, 0, 0});
             this.height.Name = "height";
             this.height.Size = new System.Drawing.Size(50, 20);
             this.height.TabIndex = 13;
@@ -457,148 +424,107 @@ namespace SannaZ_Engine
             // scaleLabel
             // 
             this.scaleLabel.AutoSize = true;
-            this.scaleLabel.Location = new System.Drawing.Point(1089, 339);
+            this.scaleLabel.Location = new System.Drawing.Point(140, 335);
             this.scaleLabel.Name = "scaleLabel";
-            this.scaleLabel.Size = new System.Drawing.Size(37, 13);
+            this.scaleLabel.Size = new System.Drawing.Size(21, 13);
             this.scaleLabel.TabIndex = 12;
             this.scaleLabel.Text = "Scale:";
             this.scaleLabel.Visible = false;
             // 
             // scale
             // 
+            this.scale.Increment = (decimal)0.01f;
             this.scale.DecimalPlaces = 2;
-            this.scale.Increment = new decimal(new int[] {
-            10,
-            0,
-            0,
-            196608});
-            this.scale.Location = new System.Drawing.Point(1119, 337);
-            this.scale.Maximum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            0});
-            this.scale.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
+            this.scale.Location = new System.Drawing.Point(170, 333);
+            this.scale.Maximum = new decimal(new int[] {90000, 0, 0, 0});
+            this.scale.Minimum = (decimal)0.1f;
             this.scale.Name = "scale";
             this.scale.Size = new System.Drawing.Size(50, 20);
             this.scale.TabIndex = 11;
-            this.scale.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
             this.scale.Visible = false;
             this.scale.ValueChanged += new System.EventHandler(this.scale_ValueChanged);
             // 
             // intensityLabel
             // 
             this.intensityLabel.AutoSize = true;
-            this.intensityLabel.Location = new System.Drawing.Point(950, 374);
+            this.intensityLabel.Location = new System.Drawing.Point(1, 372);
             this.intensityLabel.Name = "intensityLabel";
-            this.intensityLabel.Size = new System.Drawing.Size(49, 13);
+            this.intensityLabel.Size = new System.Drawing.Size(21, 13);
             this.intensityLabel.TabIndex = 12;
             this.intensityLabel.Text = "Intensity:";
             this.intensityLabel.Visible = false;
             // 
             // intensity
             // 
+            this.intensity.Increment = (decimal)0.01f;
             this.intensity.DecimalPlaces = 2;
-            this.intensity.Increment = new decimal(new int[] {
-            10,
-            0,
-            0,
-            196608});
-            this.intensity.Location = new System.Drawing.Point(999, 372);
-            this.intensity.Maximum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            0});
-            this.intensity.Minimum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.intensity.Name = "intensity";
+            this.intensity.Location = new System.Drawing.Point(50, 370);
+            this.intensity.Maximum = new decimal(new int[] { 90000, 0, 0, 0 });
+            this.intensity.Minimum = (decimal)0.1f;
+            this.intensity.Name = "scale";
             this.intensity.Size = new System.Drawing.Size(50, 20);
             this.intensity.TabIndex = 11;
-            this.intensity.Value = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
             this.intensity.Visible = false;
             this.intensity.ValueChanged += new System.EventHandler(this.intensity_ValueChanged);
             // 
             // objectTypes
             // 
             this.objectTypes.FormattingEnabled = true;
-            this.objectTypes.Location = new System.Drawing.Point(952, 363);
+            this.objectTypes.Location = new System.Drawing.Point(3, 359);
             this.objectTypes.Name = "objectTypes";
-            this.objectTypes.Size = new System.Drawing.Size(269, 43);
+            this.objectTypes.Size = new System.Drawing.Size(269, 45);
             this.objectTypes.TabIndex = 15;
             this.objectTypes.Visible = false;
-            this.objectTypes.SelectedIndexChanged += new System.EventHandler(this.objectTypes_SelectedIndexChanged);
             // 
             // hudTypes
             // 
             this.hudTypes.FormattingEnabled = true;
-            this.hudTypes.Location = new System.Drawing.Point(952, 363);
+            this.hudTypes.Location = new System.Drawing.Point(3, 359);
             this.hudTypes.Name = "hudTypes";
-            this.hudTypes.Size = new System.Drawing.Size(269, 43);
+            this.hudTypes.Size = new System.Drawing.Size(269, 45);
             this.hudTypes.TabIndex = 15;
             this.hudTypes.Visible = false;
             // 
             // propertyText
             // 
-            this.propertyText.AutoSize = true;
             this.propertyText.BackColor = System.Drawing.Color.Transparent;
-            this.propertyText.Location = new System.Drawing.Point(1249, 342);
+            this.propertyText.AutoSize = true;
+            this.propertyText.Location = new System.Drawing.Point(300, 340);
             this.propertyText.Name = "propertyText";
-            this.propertyText.Size = new System.Drawing.Size(46, 13);
-            this.propertyText.TabIndex = 22;
             this.propertyText.Text = "Property";
             this.propertyText.Visible = false;
-            this.propertyText.Click += new System.EventHandler(this.propertyText_Click);
             // 
             // propertyTypes
             // 
             this.propertyTypes.FormattingEnabled = true;
-            this.propertyTypes.Location = new System.Drawing.Point(1249, 361);
+            this.propertyTypes.Location = new System.Drawing.Point(300, 359);
             this.propertyTypes.Name = "propertyTypes";
-            this.propertyTypes.Size = new System.Drawing.Size(225, 56);
+            this.propertyTypes.Size = new System.Drawing.Size(225, 60);
             this.propertyTypes.TabIndex = 15;
             this.propertyTypes.Visible = false;
-            this.propertyTypes.SelectedIndexChanged += new System.EventHandler(this.propertyTypes_SelectedIndexChanged);
             // 
             // animationPathLabel
             // 
             this.animationPathLabel.AutoSize = true;
-            this.animationPathLabel.Location = new System.Drawing.Point(1241, 432);
+            this.animationPathLabel.Location = new System.Drawing.Point(292, 430);
             this.animationPathLabel.Name = "animationPathLabel";
-            this.animationPathLabel.Size = new System.Drawing.Size(56, 13);
+            this.animationPathLabel.Size = new System.Drawing.Size(39, 13);
             this.animationPathLabel.TabIndex = 5;
             this.animationPathLabel.Text = "Animation:";
             this.animationPathLabel.Visible = false;
-            this.animationPathLabel.Click += new System.EventHandler(this.animationPathLabel_Click);
             // 
             // animationPath
             // 
             this.animationPath.Enabled = false;
-            this.animationPath.Location = new System.Drawing.Point(1299, 435);
+            this.animationPath.Location = new System.Drawing.Point(350, 430);
             this.animationPath.Name = "animationPath";
             this.animationPath.Size = new System.Drawing.Size(100, 20);
             this.animationPath.TabIndex = 16;
             this.animationPath.Visible = false;
-            this.animationPath.TextChanged += new System.EventHandler(this.animationPath_TextChanged);
             // 
             // loadAnimationButton
             // 
-            this.loadAnimationButton.Location = new System.Drawing.Point(1399, 432);
+            this.loadAnimationButton.Location = new System.Drawing.Point(455, 430);
             this.loadAnimationButton.Name = "loadAnimationButton";
             this.loadAnimationButton.Size = new System.Drawing.Size(75, 23);
             this.loadAnimationButton.TabIndex = 17;
@@ -609,7 +535,7 @@ namespace SannaZ_Engine
             // 
             // removeAnimationButton
             // 
-            this.removeAnimationButton.Location = new System.Drawing.Point(1399, 457);
+            this.removeAnimationButton.Location = new System.Drawing.Point(455, 455);
             this.removeAnimationButton.Name = "removeAnimationButton";
             this.removeAnimationButton.Size = new System.Drawing.Size(75, 23);
             this.removeAnimationButton.TabIndex = 17;
@@ -621,9 +547,9 @@ namespace SannaZ_Engine
             // spritePathLabel
             // 
             this.spritePathLabel.AutoSize = true;
-            this.spritePathLabel.Location = new System.Drawing.Point(1241, 434);
+            this.spritePathLabel.Location = new System.Drawing.Point(292, 430);
             this.spritePathLabel.Name = "spritePathLabel";
-            this.spritePathLabel.Size = new System.Drawing.Size(37, 13);
+            this.spritePathLabel.Size = new System.Drawing.Size(39, 13);
             this.spritePathLabel.TabIndex = 5;
             this.spritePathLabel.Text = "Sprite:";
             this.spritePathLabel.Visible = false;
@@ -631,7 +557,7 @@ namespace SannaZ_Engine
             // spritePath
             // 
             this.spritePath.Enabled = false;
-            this.spritePath.Location = new System.Drawing.Point(1299, 434);
+            this.spritePath.Location = new System.Drawing.Point(350, 430);
             this.spritePath.Name = "spritePath";
             this.spritePath.Size = new System.Drawing.Size(100, 20);
             this.spritePath.TabIndex = 16;
@@ -639,7 +565,7 @@ namespace SannaZ_Engine
             // 
             // loadSpriteButton
             // 
-            this.loadSpriteButton.Location = new System.Drawing.Point(1400, 432);
+            this.loadSpriteButton.Location = new System.Drawing.Point(455, 430);
             this.loadSpriteButton.Name = "loadSpriteButton";
             this.loadSpriteButton.Size = new System.Drawing.Size(75, 23);
             this.loadSpriteButton.TabIndex = 17;
@@ -650,7 +576,7 @@ namespace SannaZ_Engine
             // 
             // removeSpriteButton
             // 
-            this.removeSpriteButton.Location = new System.Drawing.Point(1400, 457);
+            this.removeSpriteButton.Location = new System.Drawing.Point(455, 455);
             this.removeSpriteButton.Name = "removeSpriteButton";
             this.removeSpriteButton.Size = new System.Drawing.Size(75, 23);
             this.removeSpriteButton.TabIndex = 17;
@@ -662,28 +588,19 @@ namespace SannaZ_Engine
             // layerDepthLabel
             // 
             this.layerDepthLabel.AutoSize = true;
-            this.layerDepthLabel.Location = new System.Drawing.Point(951, 409);
+            this.layerDepthLabel.Location = new System.Drawing.Point(2, 407);
             this.layerDepthLabel.Name = "layerDepthLabel";
-            this.layerDepthLabel.Size = new System.Drawing.Size(65, 13);
+            this.layerDepthLabel.Size = new System.Drawing.Size(39, 13);
             this.layerDepthLabel.TabIndex = 5;
             this.layerDepthLabel.Text = "LayerDepth:";
             this.layerDepthLabel.Visible = false;
-            this.layerDepthLabel.Click += new System.EventHandler(this.layerDepthLabel_Click);
             // 
             // layerDepth
             // 
             this.layerDepth.DecimalPlaces = 3;
-            this.layerDepth.Increment = new decimal(new int[] {
-            1,
-            0,
-            0,
-            65536});
-            this.layerDepth.Location = new System.Drawing.Point(1022, 407);
-            this.layerDepth.Maximum = new decimal(new int[] {
-            1,
-            0,
-            0,
-            0});
+            this.layerDepth.Increment = new decimal(new int[] { 1, 0, 0, 65536 });
+            this.layerDepth.Location = new System.Drawing.Point(73, 405);
+            this.layerDepth.Maximum = new decimal(new int[] { 1, 0, 0, 0 });
             this.layerDepth.Name = "layerDepth";
             this.layerDepth.Size = new System.Drawing.Size(53, 20);
             this.layerDepth.TabIndex = 19;
@@ -693,39 +610,39 @@ namespace SannaZ_Engine
             // tagLabel
             // 
             this.tagLabel.AutoSize = true;
-            this.tagLabel.Location = new System.Drawing.Point(951, 434);
+            this.tagLabel.Location = new System.Drawing.Point(2, 432);
             this.tagLabel.Name = "tagLabel";
-            this.tagLabel.Size = new System.Drawing.Size(29, 13);
+            this.tagLabel.Size = new System.Drawing.Size(39, 13);
             this.tagLabel.TabIndex = 5;
             this.tagLabel.Text = "Tag:";
             this.tagLabel.Visible = false;
-            this.tagLabel.Click += new System.EventHandler(this.tagLabel_Click);
             // 
             // tagDropDown
             // 
-            this.tagDropDown.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.tagDropDown.FormattingEnabled = true;
-            this.tagDropDown.Location = new System.Drawing.Point(979, 432);
-            this.tagDropDown.Name = "tagDropDown";
-            this.tagDropDown.Size = new System.Drawing.Size(100, 21);
-            this.tagDropDown.TabIndex = 19;
             this.tagDropDown.Visible = false;
-            this.tagDropDown.DropDown += new System.EventHandler(this.tagDropDown_Active);
+            this.tagDropDown.Enabled = true;
+            this.tagDropDown.DropDownStyle = ComboBoxStyle.DropDownList;
+            this.tagDropDown.FormattingEnabled = true;
+            this.tagDropDown.Location = new System.Drawing.Point(30, 430);
+            this.tagDropDown.Name = "tagDropDown";
+            this.tagDropDown.Size = new System.Drawing.Size(100, 35);
+            this.tagDropDown.TabIndex = 19;
             this.tagDropDown.SelectedIndexChanged += new System.EventHandler(this.tagDropDown_IndexChanged);
+            this.tagDropDown.DropDown += new System.EventHandler(this.tagDropDown_Active);
             this.tagDropDown.DropDownClosed += new System.EventHandler(this.tagDropDown_Disactive);
             // 
             // addTagText
             // 
-            this.addTagText.Location = new System.Drawing.Point(979, 460);
+            this.addTagText.Enabled = true;
+            this.addTagText.Location = new System.Drawing.Point(30, 458);
             this.addTagText.Name = "addTagText";
             this.addTagText.Size = new System.Drawing.Size(83, 20);
             this.addTagText.TabIndex = 16;
             this.addTagText.Visible = false;
-            this.addTagText.TextChanged += new System.EventHandler(this.addTagText_TextChanged);
             // 
             // addTagButton
             // 
-            this.addTagButton.Location = new System.Drawing.Point(1066, 459);
+            this.addTagButton.Location = new System.Drawing.Point(117, 457);
             this.addTagButton.Name = "addTagButton";
             this.addTagButton.Size = new System.Drawing.Size(32, 20);
             this.addTagButton.TabIndex = 17;
@@ -736,9 +653,9 @@ namespace SannaZ_Engine
             // 
             // removeTagButton
             // 
-            this.removeTagButton.Location = new System.Drawing.Point(1082, 432);
+            this.removeTagButton.Location = new System.Drawing.Point(133, 430);
             this.removeTagButton.Name = "removeTagButton";
-            this.removeTagButton.Size = new System.Drawing.Size(54, 20);
+            this.removeTagButton.Size = new System.Drawing.Size(54 , 20);
             this.removeTagButton.TabIndex = 17;
             this.removeTagButton.Text = "Remove";
             this.removeTagButton.UseVisualStyleBackColor = true;
@@ -748,50 +665,49 @@ namespace SannaZ_Engine
             // collidableCheckBox
             // 
             this.collidableCheckBox.AutoSize = true;
-            this.collidableCheckBox.Location = new System.Drawing.Point(1084, 409);
+            this.collidableCheckBox.Visible = false;
+            this.collidableCheckBox.Location = new System.Drawing.Point(135, 407);
             this.collidableCheckBox.Name = "collidableCheckBox";
-            this.collidableCheckBox.Size = new System.Drawing.Size(64, 17);
+            this.collidableCheckBox.Size = new System.Drawing.Size(62, 17);
             this.collidableCheckBox.TabIndex = 9;
             this.collidableCheckBox.Text = "Collision";
             this.collidableCheckBox.UseVisualStyleBackColor = true;
-            this.collidableCheckBox.Visible = false;
             this.collidableCheckBox.CheckedChanged += new System.EventHandler(this.collidable_CheckedChanged);
             // 
             // enemyStopCheckBox
             // 
             this.enemyStopCheckBox.AutoSize = true;
-            this.enemyStopCheckBox.Location = new System.Drawing.Point(954, 434);
+            this.enemyStopCheckBox.Visible = false;
+            this.enemyStopCheckBox.Location = new System.Drawing.Point(5, 430);
             this.enemyStopCheckBox.Name = "enemyStopCheckBox";
-            this.enemyStopCheckBox.Size = new System.Drawing.Size(48, 17);
+            this.enemyStopCheckBox.Size = new System.Drawing.Size(62, 17);
             this.enemyStopCheckBox.TabIndex = 9;
             this.enemyStopCheckBox.Text = "Stop";
             this.enemyStopCheckBox.UseVisualStyleBackColor = true;
-            this.enemyStopCheckBox.Visible = false;
             this.enemyStopCheckBox.CheckedChanged += new System.EventHandler(this.enemyStop_CheckedChanged);
             // 
             // gravityCheckBox
             // 
             this.gravityCheckBox.AutoSize = true;
-            this.gravityCheckBox.Location = new System.Drawing.Point(1154, 409);
+            this.gravityCheckBox.Visible = false;
+            this.gravityCheckBox.Location = new System.Drawing.Point(205, 407);
             this.gravityCheckBox.Name = "gravityCheckBox";
-            this.gravityCheckBox.Size = new System.Drawing.Size(59, 17);
+            this.gravityCheckBox.Size = new System.Drawing.Size(62, 17);
             this.gravityCheckBox.TabIndex = 9;
             this.gravityCheckBox.Text = "Gravity";
             this.gravityCheckBox.UseVisualStyleBackColor = true;
-            this.gravityCheckBox.Visible = false;
             this.gravityCheckBox.CheckedChanged += new System.EventHandler(this.gravity_CheckedChanged);
             // 
             // gameGroupBox
             // 
             this.gameGroupBox.Controls.Add(this.drawSelected);
             this.gameGroupBox.Controls.Add(this.paused);
-            this.gameGroupBox.Location = new System.Drawing.Point(961, 512);
+            this.gameGroupBox.Location = new System.Drawing.Point(12, 510);
             this.gameGroupBox.Name = "gameGroupBox";
             this.gameGroupBox.Size = new System.Drawing.Size(127, 101);
             this.gameGroupBox.TabIndex = 21;
             this.gameGroupBox.TabStop = false;
             this.gameGroupBox.Text = "Game";
-            this.gameGroupBox.Enter += new System.EventHandler(this.gameGroupBox_Enter);
             // 
             // drawSelected
             // 
@@ -804,7 +720,6 @@ namespace SannaZ_Engine
             this.drawSelected.TabIndex = 6;
             this.drawSelected.Text = "Highlight Selected";
             this.drawSelected.UseVisualStyleBackColor = true;
-            this.drawSelected.CheckedChanged += new System.EventHandler(this.drawSelected_CheckedChanged);
             // 
             // paused
             // 
@@ -824,7 +739,7 @@ namespace SannaZ_Engine
             this.mapSizeGroup.Controls.Add(this.mapWidth);
             this.mapSizeGroup.Controls.Add(this.label2);
             this.mapSizeGroup.Controls.Add(this.label1);
-            this.mapSizeGroup.Location = new System.Drawing.Point(1094, 512);
+            this.mapSizeGroup.Location = new System.Drawing.Point(145, 510);
             this.mapSizeGroup.Name = "mapSizeGroup";
             this.mapSizeGroup.Size = new System.Drawing.Size(127, 101);
             this.mapSizeGroup.TabIndex = 20;
@@ -840,42 +755,25 @@ namespace SannaZ_Engine
             this.drawGridCheckBox.TabIndex = 5;
             this.drawGridCheckBox.Text = "Draw Grid";
             this.drawGridCheckBox.UseVisualStyleBackColor = true;
-            this.drawGridCheckBox.CheckedChanged += new System.EventHandler(this.drawGridCheckBox_CheckedChanged);
             // 
             // mapHeight
             // 
             this.mapHeight.Location = new System.Drawing.Point(50, 44);
-            this.mapHeight.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
+            this.mapHeight.Maximum = new decimal(new int[] {999, 0, 0, 0});
             this.mapHeight.Name = "mapHeight";
             this.mapHeight.Size = new System.Drawing.Size(46, 20);
             this.mapHeight.TabIndex = 4;
-            this.mapHeight.Value = new decimal(new int[] {
-            17,
-            0,
-            0,
-            0});
+            this.mapHeight.Value = new decimal(new int[] {17, 0, 0, 0});
             this.mapHeight.ValueChanged += new System.EventHandler(this.mapHeight_ValueChanged);
             // 
             // mapWidth
             // 
             this.mapWidth.Location = new System.Drawing.Point(50, 17);
-            this.mapWidth.Maximum = new decimal(new int[] {
-            999,
-            0,
-            0,
-            0});
+            this.mapWidth.Maximum = new decimal(new int[] {999, 0, 0, 0});
             this.mapWidth.Name = "mapWidth";
             this.mapWidth.Size = new System.Drawing.Size(46, 20);
             this.mapWidth.TabIndex = 3;
-            this.mapWidth.Value = new decimal(new int[] {
-            30,
-            0,
-            0,
-            0});
+            this.mapWidth.Value = new decimal(new int[] {30, 0, 0, 0});
             this.mapWidth.ValueChanged += new System.EventHandler(this.mapWidth_ValueChanged);
             // 
             // label2
@@ -886,7 +784,6 @@ namespace SannaZ_Engine
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 0;
             this.label2.Text = "Height:";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // label1
             // 
@@ -896,11 +793,11 @@ namespace SannaZ_Engine
             this.label1.Size = new System.Drawing.Size(38, 13);
             this.label1.TabIndex = 0;
             this.label1.Text = "Width:";
-            this.label1.Click += new System.EventHandler(this.label1_Click);
             // 
             // changeHudTextBox
             // 
-            this.changeHudTextBox.Location = new System.Drawing.Point(1129, 337);
+            this.changeHudTextBox.Enabled = true;
+            this.changeHudTextBox.Location = new System.Drawing.Point(180, 333);
             this.changeHudTextBox.Name = "changeHudTextBox";
             this.changeHudTextBox.Size = new System.Drawing.Size(100, 20);
             this.changeHudTextBox.TabIndex = 16;
@@ -910,58 +807,39 @@ namespace SannaZ_Engine
             // changeHudTextLabel
             // 
             this.changeHudTextLabel.AutoSize = true;
-            this.changeHudTextLabel.Location = new System.Drawing.Point(1094, 337);
+            this.changeHudTextLabel.Location = new System.Drawing.Point(145, 335);
             this.changeHudTextLabel.Name = "changeHudTextLabel";
-            this.changeHudTextLabel.Size = new System.Drawing.Size(31, 13);
+            this.changeHudTextLabel.Size = new System.Drawing.Size(38, 13);
             this.changeHudTextLabel.TabIndex = 0;
             this.changeHudTextLabel.Text = "Text:";
             this.changeHudTextLabel.Visible = false;
+            //
+            // layerValue
+            // 
+            this.layerValue.Increment = new decimal(new int[] { 1, 0, 0, 0 });
+            this.layerValue.Location = new System.Drawing.Point(43, 484);
+            this.layerValue.Maximum = new decimal(new int[] { 90000, 0, 0, 0 });
+            this.layerValue.Minimum = new decimal(new int[] { 90000, 0, 0, -2147483648 });
+            this.layerValue.Name = "layerValue";
+            this.layerValue.Size = new System.Drawing.Size(50, 20);
+            this.layerValue.Visible = false;
+            this.layerValue.ValueChanged += new System.EventHandler(this.layer_ValueChanged);
             // 
             // layerLabel
             // 
             this.layerLabel.AutoSize = true;
-            this.layerLabel.Location = new System.Drawing.Point(952, 488);
+            this.layerLabel.Location = new System.Drawing.Point(3, 486);
             this.layerLabel.Name = "layerLabel";
-            this.layerLabel.Size = new System.Drawing.Size(36, 13);
+            this.layerLabel.Size = new System.Drawing.Size(38, 13);
             this.layerLabel.TabIndex = 0;
             this.layerLabel.Text = "Layer:";
             this.layerLabel.Visible = false;
-            this.layerLabel.Click += new System.EventHandler(this.layerLabel_Click);
-            // 
-            // layerValue
-            // 
-            this.layerValue.Location = new System.Drawing.Point(992, 486);
-            this.layerValue.Maximum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            0});
-            this.layerValue.Minimum = new decimal(new int[] {
-            90000,
-            0,
-            0,
-            -2147483648});
-            this.layerValue.Name = "layerValue";
-            this.layerValue.Size = new System.Drawing.Size(50, 20);
-            this.layerValue.TabIndex = 23;
-            this.layerValue.Visible = false;
-            this.layerValue.ValueChanged += new System.EventHandler(this.layer_ValueChanged);
-            // 
-            // game11
-            // 
-            this.game11.Location = new System.Drawing.Point(13, 27);
-            this.game11.MouseHoverUpdatesOnly = false;
-            this.game11.Name = "game11";
-            this.game11.Size = new System.Drawing.Size(930, 580);
-            this.game11.TabIndex = 24;
-            this.game11.Text = "game11";
             // 
             // Editor
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1474, 623);
-            this.Controls.Add(this.game11);
+            this.ClientSize = new System.Drawing.Size(534, 623);
             this.Controls.Add(this.SannaZEngineText);
             this.Controls.Add(this.gameGroupBox);
             this.Controls.Add(this.mapSizeGroup);
@@ -1012,11 +890,10 @@ namespace SannaZ_Engine
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedDialog;
             this.MainMenuStrip = this.menuStrip;
             this.MaximizeBox = false;
-            this.Name = "Editor";
-            this.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.Name = "SannaZEditor";
             this.StartPosition = System.Windows.Forms.FormStartPosition.Manual;
             this.Text = "SannaZEditor";
-            this.Load += new System.EventHandler(this.Editor_Load);
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.Editor_FormClosing);
             this.menuStrip.ResumeLayout(false);
             this.menuStrip.PerformLayout();
             this.groupBox1.ResumeLayout(false);
@@ -1028,21 +905,18 @@ namespace SannaZ_Engine
             ((System.ComponentModel.ISupportInitialize)(this.scale)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.intensity)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.layerDepth)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.layerValue)).EndInit();
             this.gameGroupBox.ResumeLayout(false);
             this.gameGroupBox.PerformLayout();
             this.mapSizeGroup.ResumeLayout(false);
             this.mapSizeGroup.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)(this.mapHeight)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.mapWidth)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.layerValue)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
-
+            Dispose(false);
         }
 
-#endregion
-
-        private Game1 game11;
+        #endregion
     }
-#endif
 }

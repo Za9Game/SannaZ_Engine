@@ -21,10 +21,8 @@ using System.Threading;
 
 namespace SannaZ_Engine
 {
-#if DEBUG
-    public partial class Game1 : MonoGame.Forms.Controls.MonoGameControl
+    public class Game1 : Game
     {
-
         #region DLL Functions
         [DllImport("user32.dll")]
         static extern bool SetForegroundWindow(IntPtr hWnd);
@@ -49,9 +47,9 @@ namespace SannaZ_Engine
         }
         #endregion
 
-        //GraphicsDeviceManager graphics;
+        GraphicsDeviceManager graphics;
         //GraphicsDevice graphicsDevice;
-        //SpriteBatch spriteBatch;
+        SpriteBatch spriteBatch;
 
         public List<GameObject> objects = new List<GameObject>();
         public List<Light> lights = new List<Light>();
@@ -61,35 +59,47 @@ namespace SannaZ_Engine
         public GameHUD gameHUD = new GameHUD();
         public Editor editor;
 
-        //RenderTarget2D lightsTarget;
-        //RenderTarget2D mainTarget;
-        //Effect effect;
+        RenderTarget2D lightsTarget;
+        RenderTarget2D mainTarget;
+        Effect effect;
 
         private float lastCameraPositionX = -1;
 
         public string nummero="";
 
-        /*
-        public Game1()
+        public Game1(Editor editor = null)
         {
-            //graphics = new GraphicsDeviceManager(this);
-            //graphics.SynchronizeWithVerticalRetrace = true;
-            //IsFixedTimeStep = true;
+            this.editor = editor;
 
+            graphics = new GraphicsDeviceManager(this);
+            graphics.SynchronizeWithVerticalRetrace = true;
+            IsFixedTimeStep = true;
 
-            //Window.AllowUserResizing = true;
-            //Window.ClientSizeChanged += new System.EventHandler<EventArgs>(ChangeResolution);
-            //Window.Title = "SannaZ_Engine";
-            //graphics.IsFullScreen = false;
-           // graphics.ApplyChanges();
+            Content.RootDirectory = "Content";
 
-            //Window.BeginScreenDeviceChange(true);
+            Resolution.Init(ref graphics);
+            Resolution.SetVirtualResolution(1300, 700);
+            Resolution.SetResolution(1300, 700, false);
+#if DEBUG
+            Resolution.SetResolution(900, 700, false);
+
+            Thread copyThread = new Thread(inputCopy);
+            copyThread.Start();
+
+#endif
+            Window.AllowUserResizing = true;
+            Window.ClientSizeChanged += new System.EventHandler<EventArgs>(ChangeResolution);
+            Window.Title = "SannaZ_Engine";
+            graphics.IsFullScreen = false;
+            graphics.ApplyChanges();
+
+            Window.BeginScreenDeviceChange(true);
 
             //graphics.GraphicsProfile = GraphicsProfile.HiDef;
             //GraphicsProfile gp = graphics.GraphicsProfile;
             //PresentationParameters pp = new PresentationParameters();
             //graphicsDevice = new GraphicsDevice(graphics.GraphicsDevice.Adapter, gp, pp);
-        }*/
+        }
 
         #region CopyContent
 
@@ -135,31 +145,20 @@ namespace SannaZ_Engine
 
         private void ChangeResolution(object sender, EventArgs e)
         {
-            //Resolution.SetVirtualResolution(1300, 700);
-            //graphics.PreferredBackBufferWidth = Window.ClientBounds.Width;
-            //graphics.PreferredBackBufferHeight = Window.ClientBounds.Height;
+            Resolution.SetVirtualResolution(1300, 700);
+            graphics.PreferredBackBufferWidth = Window.ClientBounds.Width;
+            graphics.PreferredBackBufferHeight = Window.ClientBounds.Height;
 
-           // var pp = GraphicsDevice.PresentationParameters;
-            //lightsTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
-           // mainTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
+            var pp = GraphicsDevice.PresentationParameters;
+            lightsTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
+            mainTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
         }
 
         protected override void Initialize()
         {
-            //COSTRUTTORE PARTE
-            /*
-            Resolution.Init(ref graphics);
-            Resolution.SetVirtualResolution(1300, 700);
-            Resolution.SetResolution(1300, 700, false);
 #if DEBUG
-            Resolution.SetResolution(900, 700, false);
-
-            Thread copyThread = new Thread(inputCopy);
-            copyThread.Start();
-
+            editor = new Editor(this);
 #endif
-            */
-            /*
             //ok tutto sto bordello qua con i dll prima serve per poter posizionare l'app all'inizio
             const short SWP_NOZORDER = 0X4;
             const int SWP_SHOWWINDOW = 0x0040;
@@ -179,37 +178,18 @@ namespace SannaZ_Engine
                 {
                     SetWindowPos(gameWinHandle, 0, 0, 80, gameWindow.Right, gameWindow.Top, SWP_NOZORDER | SWP_NOSIZE | SWP_SHOWWINDOW);
                 }
-            }*/
+            }
+#if DEBUG
+            editor.Show();
+#endif
 
             base.Initialize();
-            Editor.Content.RootDirectory = "Content";
 
             Camera.Initialize();
             map.Initialize();
             score.Initialize();
             Global.Initialize(this, map, score);
             gameHUD.Initialize();
-
-
-            //LOAD CONTENT ZONE
-
-            Editor.spriteBatch = new SpriteBatch(GraphicsDevice);
-#if DEBUG
-            editor.LoadTextures(Editor.Content);
-#endif
-            score.Initialize();
-            LoadLevel("Menu.jorge");
-            Camera.Initialize();
-            Camera.Update(new Vector2(0, 0));
-
-            map.Load(Editor.Content);
-            gameHUD.Load(Editor.Content);
-
-            //effect = Editor.Content.Load<Effect>("Light\\Effect1");
-
-            var pp = GraphicsDevice.PresentationParameters;
-            //lightsTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
-            //mainTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
         }
 
         public void RestartLevel(string LevelName)
@@ -220,14 +200,42 @@ namespace SannaZ_Engine
             Camera.updateYAxis = true;
             if (LevelName != "Menu.jorge")
             {
+#if !DEBUG
+                IsMouseVisible = false;
+#endif
                 Camera.Update(objects[0].position);
             }
             else
             {
-                //IsMouseVisible = true;
+                IsMouseVisible = true;
                 Camera.Update(new Vector2(0, 0));
             }
             UpdateCamera();
+        }
+
+
+        protected override void LoadContent()
+        {
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+#if DEBUG
+            editor.LoadTextures(Content);
+#endif
+            score.Initialize();
+#if !DEBUG
+            IsMouseVisible = true;
+#endif
+            LoadLevel("Menu.jorge");
+            Camera.Initialize();
+            Camera.Update(new Vector2(0, 0));
+            
+            map.Load(Content);
+            gameHUD.Load(Content);
+
+            effect = Content.Load<Effect>("Light\\Effect1");
+
+            var pp = GraphicsDevice.PresentationParameters;
+            lightsTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
+            mainTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
         }
 
         float everySeconds = 1f;
@@ -271,45 +279,45 @@ namespace SannaZ_Engine
             base.Update(gameTime);
         }
         
-        protected override void Draw()
+        protected override void Draw(GameTime gameTime)
         {
-            //GraphicsDevice.SetRenderTarget(lightsTarget);
-           // GraphicsDevice.Clear(Color.Black);
-            Editor.spriteBatch = new SpriteBatch(GraphicsDevice);
-           // Editor.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, SamplerState.LinearClamp, DepthStencilState.Default, RasterizerState.CullNone, null, Camera.GetTransformMatrix());
-           // DrawLights();
-           // Editor.spriteBatch.End();
+            GraphicsDevice.SetRenderTarget(lightsTarget);
+            GraphicsDevice.Clear(Color.Black);
+            spriteBatch = new SpriteBatch(GraphicsDevice);
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, SamplerState.LinearClamp, DepthStencilState.Default, RasterizerState.CullNone, null, Camera.GetTransformMatrix());
+            DrawLights();
+            spriteBatch.End();
 
-            //GraphicsDevice.SetRenderTarget(mainTarget);
+            GraphicsDevice.SetRenderTarget(mainTarget);
             GraphicsDevice.Clear(Color.CornflowerBlue);
-            //Resolution.BeginDraw();
-            Editor.spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default, RasterizerState.CullNone, null);
+            Resolution.BeginDraw();
+            spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default, RasterizerState.CullNone, null, Camera.GetTransformMatrix());
 #if DEBUG
-            editor.Draw(Editor.spriteBatch);
+            editor.Draw(spriteBatch);
 #endif
             DrawObjects();
-            map.DrawBoxesCollider(Editor.spriteBatch);
-            gameHUD.Draw(Editor.spriteBatch, Editor.Content);
-            Editor.spriteBatch.End();
+            map.DrawBoxesCollider(spriteBatch);
+            gameHUD.Draw(spriteBatch, Content, gameTime);
+            spriteBatch.End();
 
-          //  GraphicsDevice.SetRenderTarget(null);
-          //  GraphicsDevice.Clear(Color.CornflowerBlue);
-          //  Editor.spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
+            GraphicsDevice.SetRenderTarget(null);
+            GraphicsDevice.Clear(Color.CornflowerBlue);
+            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
 
-           // effect.Parameters["lightMask"].SetValue(lightsTarget);
-           // effect.CurrentTechnique.Passes[0].Apply();
-           // Editor.spriteBatch.Draw(mainTarget, Vector2.Zero, Color.White);
-           // Editor.spriteBatch.End();
+            effect.Parameters["lightMask"].SetValue(lightsTarget);
+            effect.CurrentTechnique.Passes[0].Apply();
+            spriteBatch.Draw(mainTarget, Vector2.Zero, Color.White);
+            spriteBatch.End();
             
-            base.Draw();
+            base.Draw(gameTime);
         }
 
         public void LoadLevel(string fileName)
         {
             Global.levelName = fileName;
 
-         //   if (Global.levelName == "Menu.jorge")
-               // IsMouseVisible = true;
+            if (Global.levelName == "Menu.jorge")
+                IsMouseVisible = true;
             
             LevelData levelData = XmlHelper.Load("Content\\Levels\\" + fileName);
 
@@ -358,8 +366,8 @@ namespace SannaZ_Engine
             for (int i = 0; i < objects.Count; i++)
             {
                 objects[i].Initialize();
-                objects[i].Load(Editor.Content);
-                Editor.Content.RootDirectory = "Content";
+                objects[i].Load(Content);
+                Content.RootDirectory = "Content";
             }
         }
         public void LoadOLight()
@@ -367,7 +375,7 @@ namespace SannaZ_Engine
             for (int i = 0; i < lights.Count; i++)
             {
                 lights[i].Initialize();
-                lights[i].Load(Editor.Content);
+                lights[i].Load(Content);
             }
         }
 
@@ -392,14 +400,14 @@ namespace SannaZ_Engine
             for (int i = 0; i < objects.Count; i++)
             {
                 if (objects[i].visible == true)
-                    objects[i].Draw(Editor.spriteBatch);
+                    objects[i].Draw(spriteBatch);
             }
         }
         public void DrawLights()
         {
             for (int i = 0; i < lights.Count; i++)
             {
-                lights[i].Draw(Editor.spriteBatch);
+                lights[i].Draw(spriteBatch);
             }
         }
 
@@ -467,5 +475,4 @@ namespace SannaZ_Engine
         }
 
     }
-#endif
 }
