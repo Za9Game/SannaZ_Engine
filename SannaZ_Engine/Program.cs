@@ -22,13 +22,17 @@ namespace SannaZ_Engine
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
 
-            Game1 game = new Game1();
 
 #if DEBUG
+            Game1 game = new Game1();
             Editor editor = new Editor(game);
             game = new Game1(editor);
-#endif
             game.Run();
+#else
+            Game1onlyRender game = new Game1onlyRender();
+            game.Run();
+#endif
+
 
         }
     }

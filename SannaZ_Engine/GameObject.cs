@@ -68,9 +68,11 @@ namespace SannaZ_Engine
 			if (Global.game != null)
 			{
 				alreadyLoadedGameAndEditor = true;
+#if DEBUG
 				game1 = Global.game;
 				if (Global.game.editor != null)
 					editor = Global.game.editor;
+# endif
 			}
         }
 
@@ -106,9 +108,11 @@ namespace SannaZ_Engine
 			{
 				if (game1 == null && Global.game != null)
 				{
+#if DEBUG
 					game1 = Global.game;
 					if (editor == null && Global.game.editor != null)
 						editor = Global.game.editor;
+#endif
 					alreadyLoadedGameAndEditor = true;
 				}
 			}

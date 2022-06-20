@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>E:/PROGRAMMARE/GameEngine/SannaZ_Engine/SannaZ_Engine/SannaZ_Engine/Content/Fonts/File.spritefont</SourceFile>
+  <SourceTime>2020-12-08T19:03:40.9585032+01:00</SourceTime>
+  <DestFile>E:/PROGRAMMARE/GameEngine/SannaZ_Engine/SannaZ_Engine/SannaZ_Engine/Content/bin/Windows/Content/Fonts/File.xnb</DestFile>
+  <DestTime>2022-06-20T22:55:54.1685945+02:00</DestTime>
+  <Importer>FontDescriptionImporter</Importer>
+  <ImporterTime>2020-08-10T18:17:54+02:00</ImporterTime>
+  <Processor>FontDescriptionProcessor</Processor>
+  <ProcessorTime>2020-08-10T18:17:54+02:00</ProcessorTime>
+  <Parameters>
+    <Key>PremultiplyAlpha</Key>
+    <Value>True</Value>
+  </Parameters>
+  <Parameters>
+    <Key>TextureFormat</Key>
+    <Value>Compressed</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

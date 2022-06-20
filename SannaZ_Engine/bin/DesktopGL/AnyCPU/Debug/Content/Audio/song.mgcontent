@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
-<PipelineBuildEvent xmlns:xsd="http://www.w3.org/2001/XMLSchema" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
   <SourceFile>E:/PROGRAMMARE/GameEngine/SannaZ_Engine/SannaZ_Engine/SannaZ_Engine/Content/Audio/song.wav</SourceFile>
-  <SourceTime>2020-07-28T12:32:07.1808766+02:00</SourceTime>
+  <SourceTime>2020-12-08T19:03:40.9734171+01:00</SourceTime>
   <DestFile>E:/PROGRAMMARE/GameEngine/SannaZ_Engine/SannaZ_Engine/SannaZ_Engine/bin/DesktopGL/AnyCPU/Debug/Content/Audio/song.xnb</DestFile>
-  <DestTime>2020-09-26T15:12:15.2835073+02:00</DestTime>
+  <DestTime>2022-06-19T23:49:17.4714859+02:00</DestTime>
   <Importer>WavImporter</Importer>
-  <ImporterTime>2018-12-08T17:35:54+01:00</ImporterTime>
+  <ImporterTime>2020-08-10T18:17:54+02:00</ImporterTime>
   <Processor>SoundEffectProcessor</Processor>
-  <ProcessorTime>2018-12-08T17:35:54+01:00</ProcessorTime>
+  <ProcessorTime>2020-08-10T18:17:54+02:00</ProcessorTime>
   <Parameters>
     <Key>Quality</Key>
     <Value>Best</Value>

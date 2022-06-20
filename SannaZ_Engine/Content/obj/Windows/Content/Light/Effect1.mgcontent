@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<PipelineBuildEvent xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <SourceFile>E:/PROGRAMMARE/GameEngine/SannaZ_Engine/SannaZ_Engine/SannaZ_Engine/Content/Light/Effect1.fx</SourceFile>
+  <SourceTime>2022-06-20T00:05:33.5799898+02:00</SourceTime>
+  <DestFile>E:/PROGRAMMARE/GameEngine/SannaZ_Engine/SannaZ_Engine/SannaZ_Engine/Content/bin/Windows/Content/Light/Effect1.xnb</DestFile>
+  <DestTime>2022-06-20T22:55:54.658975+02:00</DestTime>
+  <Importer>EffectImporter</Importer>
+  <ImporterTime>2020-08-10T18:17:54+02:00</ImporterTime>
+  <Processor>EffectProcessor</Processor>
+  <ProcessorTime>2020-08-10T18:17:54+02:00</ProcessorTime>
+  <Parameters>
+    <Key>DebugMode</Key>
+    <Value>Auto</Value>
+  </Parameters>
+  <Dependencies />
+  <BuildAsset />
+  <BuildOutput />
+</PipelineBuildEvent>

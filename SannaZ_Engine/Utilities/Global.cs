@@ -6,7 +6,6 @@ namespace SannaZ_Engine
 {
     public static class Global
     {
-        public static Game1 game;
         public static Map map;
         public static Score score;
         public static Random random = new Random();
@@ -15,13 +14,24 @@ namespace SannaZ_Engine
         public static List<TagObject> tagsHud = new List<TagObject>();
         public static List<TagObject> tagsBoxCollider = new List<TagObject>();
 
+#if DEBUG
+        public static Game1 game;
         public static void Initialize(Game1 inputGame, Map inputMap, Score inputScore)
         {
             game = inputGame;
             map = inputMap;
             score = inputScore;
         }
-        
+#else
+        public static Game1onlyRender game;
+        public static void Initialize(Game1onlyRender inputGame, Map inputMap, Score inputScore)
+        {
+            game = inputGame;
+            map = inputMap;
+            score = inputScore;
+        }
+#endif
+
         public static int TagIndex(List<TagObject> listaTag, string tag)
         {
             if(TagExist(listaTag, tag))

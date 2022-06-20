@@ -1,9 +1,9 @@
 
 #----------------------------- Global Properties ----------------------------#
 
-/outputDir:..\bin\DesktopGL\AnyCPU\Debug\Content
-/intermediateDir:..\bin\DesktopGL\AnyCPU\Debug\Content
-/platform:DesktopGL
+/outputDir:..\bin\Debug\netcoreapp3.1\Content
+/intermediateDir:..\bin\Debug\netcoreapp3.1\Content
+/platform:Windows
 /config:
 /profile:Reach
 /compress:False
@@ -54,13 +54,12 @@
 /processor:FontDescriptionProcessor
 /processorParam:PremultiplyAlpha=True
 /processorParam:TextureFormat=Compressed
-/build:Fonts/File.spritefont;Fonts/Emulogic.spritefont
+/build:Fonts/File.spritefont
 
 #begin Light/Effect1.fx
 /importer:EffectImporter
 /processor:EffectProcessor
 /processorParam:DebugMode=Auto
-/processorParam:Defines=
 /build:Light/Effect1.fx
 
 #begin lightmask.png

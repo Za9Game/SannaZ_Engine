@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<AnimationData xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+  <animation>
+    <animationList>
+      <Animation>
+        <animationOrder>
+          <int>0</int>
+          <int>1</int>
+        </animationOrder>
+        <name>Camminata</name>
+        <speed>12</speed>
+      </Animation>
+      <Animation>
+        <animationOrder>
+          <int>2</int>
+        </animationOrder>
+        <name>Morto</name>
+        <speed>12</speed>
+      </Animation>
+    </animationList>
+    <width>64</width>
+    <height>64</height>
+    <gridX>3</gridX>
+    <gridY>1</gridY>
+  </animation>
+  <texturePath>Textures\Enemy.png</texturePath>
+</AnimationData>
