@@ -77,12 +77,7 @@ namespace SannaZ_Engine
             Resolution.Init(ref graphics);
             Resolution.SetVirtualResolution(1300, 700);
             Resolution.SetResolution(1300, 700, false);
-#if DEBUG
-            Resolution.SetResolution(900, 700, false);
 
-            Thread copyThread = new Thread(inputCopy);
-            copyThread.Start();
-#endif
             Window.AllowUserResizing = true;
             Window.ClientSizeChanged += new System.EventHandler<EventArgs>(ChangeResolution);
             Window.Title = "SannaZ_Engine";

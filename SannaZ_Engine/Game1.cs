@@ -105,8 +105,8 @@ namespace SannaZ_Engine
 
         public void inputCopy()
         {
-            string sourceDirectory = @"E:\PROGRAMMARE\GameEngine\prova Sannaz ricostruisco\SannaZ_Engine\bin\Debug\netcoreapp3.1\Content";
-            string targetDirectory = @"E:\PROGRAMMARE\GameEngine\prova Sannaz ricostruisco\SannaZ_Engine\bin\Release\netcoreapp3.1\Content";
+            string sourceDirectory = @"E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Debug\Content";
+            string targetDirectory = @"E:\PROGRAMMARE\GameEngine\SannaZ_Engine Versione Unita\SannaZ_Engine\SannaZ_Engine\bin\DesktopGL\AnyCPU\Release\Content";
             Copy(sourceDirectory, targetDirectory);
         }
 
@@ -168,7 +168,7 @@ namespace SannaZ_Engine
             SDL.SDL_GetWindowWMInfo(this.Window.Handle, ref info);
             IntPtr gameWinHandle = info.info.win.window;
 
-            Process[] processes = Process.GetProcessesByName("SannaZ_Engine");
+            Process[] processes = Process.GetProcessesByName("Sanna_Engine");
             foreach (var process in processes)
             {
                 RECT gameWindow = new RECT();
@@ -272,7 +272,7 @@ namespace SannaZ_Engine
             
             UpdateObjects();
             UpdateLights();
-            UpdateCamera();
+            //UpdateCamera();
             map.Update();
             gameHUD.Update();
 #if DEBUG
