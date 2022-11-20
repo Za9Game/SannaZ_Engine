@@ -38,7 +38,7 @@ namespace SannaZ_Engine
 
         string savePath = ""; //per salvare file
 
-        string contentFullPath = "E:\\PROGRAMMARE\\GameEngine\\SannaZ_Engine\\SannaZ_Engine\\SannaZ_Engine\\bin\\DesktopGL\\AnyCPU\\Debug\\";
+        string contentFullPath = "E:\\PROGRAMMARE\\GameEngine\\prova Sannaz ricostruisco\\SannaZ_Engine\\bin\\Debug\\netcoreapp3.1\\";
         enum ObjectType
         {
             Enemy, Player, Tile, NumOfObjects,
@@ -1716,8 +1716,7 @@ namespace SannaZ_Engine
 
         private bool GameWindowFocused()
         {
-            return true;
-            //return GetForegroundWindow() == gameWinHandle;
+            return GetForegroundWindow() == gameWinHandle;
         }
 
         private void saveAsToolStripMenuItem_Click(object sender, EventArgs e)

@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "EFiusPDTr9E9qf0oOxRck+Bp4yZt+seU0cSByDE1UN47kFEV4AAjHKZTgdBgfro/M0EbLj6gAq1DASL3WYwuPA==",
+  "dgSpecHash": "ABBf8mwLu2SaRLA7l53JXWEgCox8kNUf0aoqJ5L/v/mWecN+tMCKTcnmt468Q98HWcVAJ3+lRhKjyVVJXFgtVg==",
   "success": true,
-  "projectFilePath": "E:\\PROGRAMMARE\\GameEngine\\SannaZ_Engine\\SannaZ_Engine\\SannaZ_Engine\\Sanna_Engine.csproj",
+  "projectFilePath": "E:\\PROGRAMMARE\\GameEngine\\prova Sannaz ricostruisco\\Sanna_Engine\\Sanna_Engine.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Sanna\\.nuget\\packages\\libuv\\1.9.1\\libuv.1.9.1.nupkg.sha512",
     "C:\\Users\\Sanna\\.nuget\\packages\\microsoft.codeanalysis.analyzers\\1.1.0\\microsoft.codeanalysis.analyzers.1.1.0.nupkg.sha512",

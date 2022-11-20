@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "E:\\PROGRAMMARE\\GameEngine\\SannaZ_Engine\\SannaZ_Engine\\SannaZ_Engine\\Sanna_Engine.csproj": {}
+    "E:\\PROGRAMMARE\\GameEngine\\prova Sannaz ricostruisco\\Sanna_Engine\\Sanna_Engine.csproj": {}
   },
   "projects": {
-    "E:\\PROGRAMMARE\\GameEngine\\SannaZ_Engine\\SannaZ_Engine\\SannaZ_Engine\\Sanna_Engine.csproj": {
+    "E:\\PROGRAMMARE\\GameEngine\\prova Sannaz ricostruisco\\Sanna_Engine\\Sanna_Engine.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "E:\\PROGRAMMARE\\GameEngine\\SannaZ_Engine\\SannaZ_Engine\\SannaZ_Engine\\Sanna_Engine.csproj",
+        "projectUniqueName": "E:\\PROGRAMMARE\\GameEngine\\prova Sannaz ricostruisco\\Sanna_Engine\\Sanna_Engine.csproj",
         "projectName": "Sanna_Engine",
-        "projectPath": "E:\\PROGRAMMARE\\GameEngine\\SannaZ_Engine\\SannaZ_Engine\\SannaZ_Engine\\Sanna_Engine.csproj",
+        "projectPath": "E:\\PROGRAMMARE\\GameEngine\\prova Sannaz ricostruisco\\Sanna_Engine\\Sanna_Engine.csproj",
         "packagesPath": "C:\\Users\\Sanna\\.nuget\\packages\\",
-        "outputPath": "E:\\PROGRAMMARE\\GameEngine\\SannaZ_Engine\\SannaZ_Engine\\SannaZ_Engine\\obj\\",
+        "outputPath": "E:\\PROGRAMMARE\\GameEngine\\prova Sannaz ricostruisco\\Sanna_Engine\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "E:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages",
@@ -73,7 +73,7 @@
               "privateAssets": "none"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.111\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\6.0.106\\RuntimeIdentifierGraph.json"
         }
       }
     }
