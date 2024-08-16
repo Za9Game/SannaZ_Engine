@@ -29,7 +29,7 @@ namespace SannaZ_Engine
             game = new Game1(editor);
             game.Run();
 #else
-            Game1onlyRender game = new Game1onlyRender();
+            Game1 game = new Game1();
             game.Run();
 #endif
 

@@ -59,9 +59,6 @@ namespace SannaZ_Engine
         public GameHUD gameHUD = new GameHUD();
         public Editor editor;
 
-        RenderTarget2D lightsTarget;
-        RenderTarget2D mainTarget;
-        Effect effect;
 
         private float lastCameraPositionX = -1;
 
@@ -69,6 +66,7 @@ namespace SannaZ_Engine
 
         public Game1(Editor editor = null)
         {
+            Global.game = this;
             this.editor = editor;
 
             graphics = new GraphicsDeviceManager(this);
@@ -148,10 +146,6 @@ namespace SannaZ_Engine
             Resolution.SetVirtualResolution(1300, 700);
             graphics.PreferredBackBufferWidth = Window.ClientBounds.Width;
             graphics.PreferredBackBufferHeight = Window.ClientBounds.Height;
-
-            var pp = GraphicsDevice.PresentationParameters;
-            lightsTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
-            mainTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
         }
 
         protected override void Initialize()
@@ -188,9 +182,9 @@ namespace SannaZ_Engine
             Camera.Initialize();
             map.Initialize();
             score.Initialize();
-#if DEBUG
+
             Global.Initialize(this, map, score);
-#endif
+
             gameHUD.Initialize();
         }
 
@@ -200,7 +194,7 @@ namespace SannaZ_Engine
             LoadLevel(LevelName);
             Camera.Initialize();
             Camera.updateYAxis = true;
-            if (LevelName != "Menu.jorge")
+            if (LevelName != "Level1.jorge")
             {
 #if !DEBUG
                 IsMouseVisible = false;
@@ -232,12 +226,6 @@ namespace SannaZ_Engine
             
             map.Load(Content);
             gameHUD.Load(Content);
-
-            effect = Content.Load<Effect>("Light\\Effect1");
-
-            var pp = GraphicsDevice.PresentationParameters;
-            lightsTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
-            mainTarget = new RenderTarget2D(GraphicsDevice, pp.BackBufferWidth, pp.BackBufferHeight);
         }
 
         float everySeconds = 1f;
@@ -283,14 +271,7 @@ namespace SannaZ_Engine
         
         protected override void Draw(GameTime gameTime)
         {
-            GraphicsDevice.SetRenderTarget(lightsTarget);
-            GraphicsDevice.Clear(Color.Black);
-            spriteBatch = new SpriteBatch(GraphicsDevice);
-            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.Additive, SamplerState.LinearClamp, DepthStencilState.Default, RasterizerState.CullNone, null, Camera.GetTransformMatrix());
-            DrawLights();
-            spriteBatch.End();
-
-            GraphicsDevice.SetRenderTarget(mainTarget);
+            //GraphicsDevice.SetRenderTarget(null);
             GraphicsDevice.Clear(Color.CornflowerBlue);
             Resolution.BeginDraw();
             spriteBatch.Begin(SpriteSortMode.BackToFront, BlendState.AlphaBlend, SamplerState.LinearClamp, DepthStencilState.Default, RasterizerState.CullNone, null, Camera.GetTransformMatrix());
@@ -302,15 +283,6 @@ namespace SannaZ_Engine
             gameHUD.Draw(spriteBatch, Content, gameTime);
             spriteBatch.End();
 
-            GraphicsDevice.SetRenderTarget(null);
-            GraphicsDevice.Clear(Color.CornflowerBlue);
-            spriteBatch.Begin(SpriteSortMode.Immediate, BlendState.AlphaBlend);
-
-            effect.Parameters["lightMask"].SetValue(lightsTarget);
-            effect.CurrentTechnique.Passes[0].Apply();
-            spriteBatch.Draw(mainTarget, Vector2.Zero, Color.White);
-            spriteBatch.End();
-            
             base.Draw(gameTime);
         }
 
